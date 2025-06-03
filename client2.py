@@ -4,7 +4,7 @@ import requests
 url = "https://rcw-azzure-dadrgufpefhrecbq.canadaeast-01.azurewebsites.net/test"
 
 
-response = requests.post(url)
+response = requests.get(url)
 try:
     response = response.json()
     print(response)

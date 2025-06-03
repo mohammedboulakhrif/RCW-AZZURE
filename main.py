@@ -11,7 +11,7 @@ async def root():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) 
 
-@app.post("/test")
+@app.get("/test")
 async def test():
     try:
         return {"message": "welcome to my world"}
