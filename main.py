@@ -4,14 +4,14 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/test1")
 async def root():
     try:
         return {"message": "Hello my world"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) 
 
-@app.post("/test")
+@app.post("/test2")
 async def test():
     try:
         return {"message": "welcome to my world"}

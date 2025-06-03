@@ -1,7 +1,7 @@
 import requests
 
 #url = "http://localhost:8000/test"
-url = "https://rcw-azzure-dadrgufpefhrecbq.canadaeast-01.azurewebsites.net"
+url = "https://rcw-azzure-dadrgufpefhrecbq.canadaeast-01.azurewebsites.net/test"
 
 
 response = requests.post(url)
