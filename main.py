@@ -7,13 +7,13 @@ app = FastAPI()
 @app.get("/")
 async def root():
     try:
-        return {"message": "Hello World"}
+        return {"message": "Hello my world"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) 
 
 @app.post("/test")
 async def test():
     try:
-        return {"message": "welcome world"}
+        return {"message": "welcome to my world"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
